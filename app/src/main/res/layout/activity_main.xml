@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La mia lista della spesa"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editProdotto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome del prodotto"
+        android:inputType="textCapSentences"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/editQuantita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantità"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/buttonAggiungi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AGGIUNGI"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prodotti"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/listaProdotti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>
